@@ -8,6 +8,7 @@ export default function Contact() {
     type: "idle" | "error" | "success";
     text: string;
   }>({ type: "idle", text: "" });
+  const [submitting, setSubmitting] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -15,7 +16,7 @@ export default function Contact() {
     setForm({ ...form, [e.target.id]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     const name = form.name.trim();
@@ -23,32 +24,37 @@ export default function Contact() {
     const message = form.message.trim();
 
     if (!name || !email || !message) {
-      setStatus({
-        type: "error",
-        text: "Please complete all fields before sending your message.",
-      });
+      setStatus({ type: "error", text: "Please complete all fields." });
       return;
     }
 
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email)) {
-      setStatus({
-        type: "error",
-        text: "Please enter a valid email address.",
-      });
+      setStatus({ type: "error", text: "Please enter a valid email address." });
       return;
     }
 
-    const subject = encodeURIComponent(`Website Inquiry from ${name}`);
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
-    );
-    window.location.href = `mailto:NabatTaxService@gmail.com?subject=${subject}&body=${body}`;
+    setSubmitting(true);
+    setStatus({ type: "idle", text: "" });
 
-    setStatus({
-      type: "success",
-      text: "Your email client was opened. If it did not open, use the direct email link below.",
-    });
+    try {
+      const res = await fetch(process.env.NEXT_PUBLIC_FORMSPREE_URL!, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, message }),
+      });
+
+      if (res.ok) {
+        setStatus({ type: "success", text: "Message sent! We'll be in touch soon." });
+        setForm({ name: "", email: "", message: "" });
+      } else {
+        setStatus({ type: "error", text: "Something went wrong. Please try again or call us directly." });
+      }
+    } catch {
+      setStatus({ type: "error", text: "Something went wrong. Please try again or call us directly." });
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -126,10 +132,13 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="gradient-cta text-on-primary px-12 py-5 rounded-lg font-sans font-semibold tracking-wide shadow-lg transition-transform hover:-translate-y-1 self-start inline-flex items-center gap-2"
+                disabled={submitting}
+                className="gradient-cta text-on-primary px-12 py-5 rounded-lg font-sans font-semibold tracking-wide shadow-lg transition-transform hover:-translate-y-1 self-start inline-flex items-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:translate-y-0"
               >
-                Send Message{" "}
-                <span className="material-symbols-outlined text-sm">send</span>
+                {submitting ? "Sending..." : "Send Message"}
+                <span className="material-symbols-outlined text-sm">
+                  {submitting ? "hourglass_empty" : "send"}
+                </span>
               </button>
 
               {status.type !== "idle" && (
