@@ -22,11 +22,11 @@ body {
   }
 
   .dossier-card {
-    box-shadow: inset 4px 0 0 #755b00;
+    border-left: 4px solid #755b00;
   }
 
   .identogo-card {
-    box-shadow: inset 4px 0 0 #1b2f4e;
+    border-left: 4px solid #1B2F4E;
   }
 
   .asymmetric-grid {

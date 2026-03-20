@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Services() {
   return (
-    <section className="min-h-screen py-24 px-5 sm:px-8 bg-surface-container-low scroll-mt-24" id="services">
+    <section className="min-h-screen py-24 px-5 sm:px-8 bg-surface-container-low scroll-mt-12" id="services">
       <div className="max-w-screen-2xl mx-auto">
         <div className="mb-20 space-y-4">
           <p className="text-primary font-sans text-xs font-bold uppercase tracking-[0.3em]">

@@ -14,7 +14,7 @@ export default function QuoteSection() {
         </h2>
         <div className="h-[2px] w-32 bg-primary mx-auto mt-16"></div>
         <p className="mt-8 font-sans font-bold text-primary-container uppercase tracking-widest text-sm">
-          Nabat Tax Service Collective
+          Nabat Tax Service
         </p>
       </div>
     </section>

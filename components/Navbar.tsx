@@ -4,11 +4,11 @@ import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 
+let hasInitialized = false;
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeHash, setActiveHash] = useState(() =>
-    typeof window !== "undefined" ? window.location.hash : ""
-  );
+  const [activeHash, setActiveHash] = useState("");
   const pathname = usePathname();
   const isScrollingRef = useRef(false);
   const scrollTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -27,6 +27,17 @@ export default function Navbar() {
   const href = (anchor: string) => (isHome ? anchor : `/${anchor}`);
 
   useEffect(() => {
+    window.history.scrollRestoration = "manual";
+
+    if (!hasInitialized) {
+      hasInitialized = true;
+      const navEntry = performance.getEntriesByType("navigation")[0] as PerformanceNavigationTiming;
+      if (navEntry?.type === "reload") {
+        window.scrollTo(0, 0);
+        window.history.replaceState(null, document.title, window.location.pathname);
+      }
+    }
+
     const sections = ["about", "services", "contact"];
 
     const observer = new IntersectionObserver(

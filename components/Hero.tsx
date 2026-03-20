@@ -18,7 +18,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-screen-2xl mx-auto px-8 w-full">
         <div className="max-w-4xl space-y-10">
           <span className="inline-block px-4 py-1 rounded-full bg-surface-container-high text-primary font-sans text-xs font-bold uppercase tracking-[0.2em]">
-            Boutique Advisory • Boston, MA
+            Boston, MA
           </span>
           <h1 className="font-serif text-6xl md:text-8xl leading-[1.05] tracking-tight text-on-surface">
             Precision Tax Strategy for <br />
@@ -27,8 +27,7 @@ export default function Hero() {
             </span>
           </h1>
           <p className="font-sans text-xl md:text-2xl text-on-surface-variant leading-relaxed max-w-2xl font-light">
-            Nabat Tax Service provides sophisticated tax strategy and financial
-            dossiers for Boston&apos;s most discerning modern professionals.
+            Nabat Tax Service provides tax and financial services for Boston professionals.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 pt-4">
             <Link

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section className="min-h-screen flex items-center px-8 bg-surface scroll-mt-24" id="about">
+    <section className="min-h-screen flex items-center px-8 bg-surface scroll-mt-12" id="about">
       <div className="max-w-screen-2xl mx-auto grid md:grid-cols-2 gap-20 items-center w-full py-24">
         <div className="space-y-8">
           <h2 className="font-serif text-5xl md:text-6xl leading-tight">
@@ -11,9 +11,7 @@ export default function About() {
           </h2>
           <div className="h-1 w-24 bg-primary"></div>
           <p className="font-sans text-lg text-on-surface-variant leading-relaxed">
-            Based in the heart of Boston, our services treats your financial life as
-            a singular work of art. We don&apos;t just file forms; we construct
-            comprehensive tax frameworks that protect and optimize your legacy.
+            Based in Boston, we handle your taxes with accuracy and personal attention — no shortcuts, no fluff.
           </p>
           <div className="grid grid-cols-2 gap-8 pt-8">
             <div>

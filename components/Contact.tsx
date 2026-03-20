@@ -65,8 +65,7 @@ export default function Contact() {
                 We&apos;re Here to <span className="italic">Help</span>
               </h2>
               <p className="text-on-surface-variant text-lg font-light max-w-md">
-                Our team is ready to assist with your sophisticated tax
-                requirements.
+                Our team is ready to assist with your tax needs.
               </p>
             </div>
 
@@ -153,7 +152,7 @@ export default function Contact() {
               <div className="flex items-center gap-4 text-primary">
                 <span className="material-symbols-outlined">location_on</span>
                 <h5 className="font-sans font-bold uppercase tracking-widest text-xs">
-                  Nabat Tax service
+                  Nabat Tax Service
                 </h5>
               </div>
               <p className="font-serif text-2xl leading-relaxed text-on-surface">
