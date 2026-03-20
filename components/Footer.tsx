@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-surface-container-low dark:bg-surface-container-low-dark w-full py-12 px-8 border-t border-outline-variant/10">
+    <footer className="bg-surface-container-low dark:bg-surface-container-low-dark w-full py-8 px-8 border-t border-outline-variant/10">
       <div className="flex flex-col md:flex-row justify-between items-center gap-8 max-w-screen-2xl mx-auto">
         <div className="space-y-4 text-center md:text-left">
           <div className="font-serif text-xl text-primary">Nabat Tax Service</div>
