@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden pt-12">
+    <section className="relative min-h-screen flex items-center overflow-hidden pt-24 md:pt-12">
       <div className="absolute inset-0 z-0">
         <Image
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEajCaSlObhnzGeT1LEC9GxdunoRckFW3W2Zo-aUM5vcnb3GEJSjyqKNwUXQiUlDfX9-uDi0vgiUFxu4iTZ5f_Oq44c0YtiLiFDfMZBgFy38XcB7yn3_o0GY-JcqVRgj3nVDIK4rQn4GJfbWhH0rF0VW0xUC8Bm9snqPrL-qRCEJoU7DkFRY3SB-45KQP1TIv23AqhxhMPfbNWNEFy94JRlMSxTdK_ZVojpVUyi9Sw7aTevAo-4kKiH8-9ljX6vd4NvfB_HZl40Bc"
@@ -32,7 +32,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-6 pt-4">
             <Link
               href="#contact"
-              className="gradient-cta text-on-primary px-10 py-5 rounded-lg font-sans font-semibold tracking-wide text-center shadow-lg transition-transform hover:-translate-y-1"
+              className="hidden sm:block gradient-cta text-on-primary px-10 py-5 rounded-lg font-sans font-semibold tracking-wide text-center shadow-lg transition-transform hover:-translate-y-1"
             >
               Contact Us
             </Link>
