@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden pt-24">
+    <section className="relative min-h-screen flex items-center overflow-hidden pt-12">
       <div className="absolute inset-0 z-0">
         <Image
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEajCaSlObhnzGeT1LEC9GxdunoRckFW3W2Zo-aUM5vcnb3GEJSjyqKNwUXQiUlDfX9-uDi0vgiUFxu4iTZ5f_Oq44c0YtiLiFDfMZBgFy38XcB7yn3_o0GY-JcqVRgj3nVDIK4rQn4GJfbWhH0rF0VW0xUC8Bm9snqPrL-qRCEJoU7DkFRY3SB-45KQP1TIv23AqhxhMPfbNWNEFy94JRlMSxTdK_ZVojpVUyi9Sw7aTevAo-4kKiH8-9ljX6vd4NvfB_HZl40Bc"
@@ -17,10 +17,10 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-screen-2xl mx-auto px-8 w-full">
         <div className="max-w-4xl space-y-10">
-          <span className="inline-block px-4 py-1 rounded-full bg-surface-container-high text-primary font-sans text-xs font-bold uppercase tracking-[0.2em]">
+          <span className="inline-block px-4 py-1 rounded-full bg-surface-container-high text-primary font-sans text-xs font-bold uppercase tracking-[0.2em] mt-8">
             Boston, MA
           </span>
-          <h1 className="font-serif text-6xl md:text-8xl leading-[1.05] tracking-tight text-on-surface">
+          <h1 className="font-serif text-6xl md:text-8xl leading-[1.05] tracking-tight text-on-surface !mt-4">
             Precision Tax Strategy for <br />
             <span className="italic text-primary">
               Boston&apos;s Modern Professional.
