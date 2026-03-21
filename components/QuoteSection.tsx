@@ -1,6 +1,6 @@
 export default function QuoteSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-on-background overflow-hidden">
+    <section className="relative py-32 flex items-center justify-center bg-on-background overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(#755b00_1px,transparent_1px)] [background-size:40px_40px]"></div>
       </div>

@@ -36,7 +36,7 @@ export default function About() {
             alt="Modern architecture in Boston"
             width={800}
             height={600}
-            className="w-full h-[600px] object-cover rounded-lg shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
+            className="w-full h-[300px] md:h-[600px] object-cover rounded-lg shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
           />
         </div>
       </div>
