@@ -33,7 +33,7 @@ export default function Services() {
             <span className="material-symbols-outlined text-3xl text-primary mb-6 block">
               description
             </span>
-            <h4 className="font-serif text-2xl mb-2">Federal &amp; State Forms</h4>
+            <h4 className="font-serif text-2xl mb-2">Application Assistance Programs</h4>
             <p className="text-sm text-on-surface-variant leading-relaxed">
               Meticulous handling of all 50 states and federal jurisdictions.
             </p>
