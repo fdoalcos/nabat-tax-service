@@ -7,7 +7,7 @@ export default function About() {
         <div className="space-y-8">
           <h2 className="font-serif text-5xl md:text-6xl leading-tight">
             Personalized Tax Strategy for the{" "}
-            <span className="italic">Modern Bostonian</span>
+            <span className="italic">Hardworking Individual</span>
           </h2>
           <div className="h-1 w-24 bg-primary"></div>
           <p className="font-sans text-lg text-on-surface-variant leading-relaxed">
