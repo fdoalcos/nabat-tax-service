@@ -23,7 +23,7 @@ export default function Hero() {
           <h1 className="font-serif text-6xl md:text-8xl leading-[1.05] tracking-tight text-on-surface !mt-4">
             Precision Tax Strategy for <br />
             <span className="italic text-primary">
-              Boston&apos;s Modern Professional.
+              Individuals & Businesses
             </span>
           </h1>
           <p className="font-sans text-xl md:text-2xl text-on-surface-variant leading-relaxed max-w-2xl font-light">

@@ -15,13 +15,13 @@ export default function About() {
           </p>
           <div className="grid grid-cols-2 gap-8 pt-8">
             <div>
-              <div className="text-4xl font-serif text-primary mb-2">15+</div>
+              <div className="text-4xl font-serif text-primary mb-2">5+</div>
               <div className="text-xs uppercase tracking-widest font-bold text-on-surface-variant">
                 Years Expertise
               </div>
             </div>
             <div>
-              <div className="text-4xl font-serif text-primary mb-2">2.5k</div>
+              <div className="text-4xl font-serif text-primary mb-2">200+</div>
               <div className="text-xs uppercase tracking-widest font-bold text-on-surface-variant">
                 Client Portfolios
               </div>

@@ -36,15 +36,17 @@ export default function IdentoGoPage() {
               employment, licensing, and identity verification — right here at
               Nabat Tax Service in Boston.
             </p>
-            <Link
-              href="/#contact"
+            <a
+              href="https://www.identogo.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-navy-accent px-10 py-5 rounded-lg font-sans font-semibold tracking-wide shadow-lg transition-transform hover:-translate-y-1"
             >
               Schedule Appointment
               <span className="material-symbols-outlined text-sm">
                 calendar_month
               </span>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -122,7 +124,7 @@ export default function IdentoGoPage() {
                 step: "01",
                 icon: "calendar_month",
                 title: "Schedule",
-                desc: "Contact us by phone or email to book your appointment. Walk-ins welcome based on availability.",
+                desc: "Visit identogo.com to book your appointment online. Walk-ins welcome based on availability.",
               },
               {
                 step: "02",
