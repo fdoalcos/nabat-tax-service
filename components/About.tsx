@@ -21,7 +21,7 @@ export default function About() {
               </div>
             </div>
             <div>
-              <div className="text-4xl font-serif text-primary mb-2">200+</div>
+              <div className="text-4xl font-serif text-primary mb-2">500+</div>
               <div className="text-xs uppercase tracking-widest font-bold text-on-surface-variant">
                 Client Portfolios
               </div>
