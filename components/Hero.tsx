@@ -38,7 +38,7 @@ export default function Hero() {
             </Link>
             <Link
               href="#services"
-              className="bg-surface-container-highest text-primary px-10 py-5 rounded-lg font-sans font-semibold tracking-wide text-center border border-[#C9A84C] hover:bg-surface-container-high transition-colors"
+              className="bg-surface-container-highest text-primary px-10 py-5 rounded-lg font-sans font-semibold tracking-wide text-center border border-primary/40 hover:bg-surface-container-high transition-colors"
             >
               Our Services
             </Link>

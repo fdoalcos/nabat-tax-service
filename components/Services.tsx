@@ -1,5 +1,6 @@
 import Link from "next/link";
 import PersonalTaxCard from "./PersonalTaxCard";
+import ServiceCard from "./ServiceCard";
 
 export default function Services() {
   return (
@@ -16,39 +17,107 @@ export default function Services() {
           {/* Large Card — Personal Tax Preparation */}
           <PersonalTaxCard />
 
-          {/* Small Card — Business Strategy */}
-          <div className="col-span-12 md:col-span-5 min-w-0 bg-surface-container-lowest p-8 sm:p-12 hover:shadow-xl transition-all group">
-            <span className="material-symbols-outlined text-4xl text-primary mb-8 block">
-              business_center
-            </span>
-            <h3 className="font-serif text-3xl mb-4">Business Tax Preparation</h3>
-            <p className="text-on-surface-variant leading-relaxed">
-              Entity structuring and tax compliance for Boston&apos;s thriving
-              startup and professional services scene.
-            </p>
-          </div>
+          {/* Small Card — Business Tax Preparation */}
+          <ServiceCard
+            cardClass="col-span-12 md:col-span-5 min-w-0 bg-surface-container-lowest p-8 sm:p-12 hover:shadow-xl transition-all"
+            icon="business_center"
+            size="lg"
+            title="Business Tax Preparation"
+            description="Entity structuring and tax compliance for Boston's thriving startup and professional services scene."
+            modalTitle="Business Tax Checklist"
+            modalSubtitle="Gather your documents and we'll handle the rest."
+            sections={[
+              {
+                category: "Financial Records",
+                icon: "bar_chart",
+                items: [
+                  "Complete financial statements and general ledger",
+                  "Prior year tax returns",
+                  "Access to accounting records / software",
+                  "Supporting documentation for key transactions",
+                ],
+              },
+              {
+                category: "Point of Contact",
+                icon: "person",
+                items: [
+                  "Designated point of contact for coordination and inquiries",
+                ],
+              },
+            ]}
+          />
 
           {/* Three equal columns */}
-          <div className="col-span-12 md:col-span-4 min-w-0 bg-surface-container-lowest p-7 sm:p-10 hover:shadow-xl transition-all">
-            <span className="material-symbols-outlined text-3xl text-primary mb-6 block">
-              description
-            </span>
-            <h4 className="font-serif text-2xl mb-2">Application Assistance Programs</h4>
-            <p className="text-sm text-on-surface-variant leading-relaxed">
-              Meticulous handling of all 50 states and federal jurisdictions.
-            </p>
-          </div>
+          <ServiceCard
+            cardClass="col-span-12 md:col-span-4 min-w-0 bg-surface-container-lowest p-7 sm:p-10 hover:shadow-xl transition-all"
+            icon="description"
+            size="sm"
+            title="Application Assistance Programs"
+            description="Guidance and filing support for federal and state benefit programs and financial aid applications."
+            modalTitle="Application Assistance Checklist"
+            modalSubtitle="Bring your documents and we'll guide you through the process."
+            sections={[
+              {
+                category: "Financial Aid",
+                icon: "school",
+                items: [
+                  "Financial aid forms (e.g., FAFSA)",
+                ],
+              },
+              {
+                category: "Health Coverage",
+                icon: "health_and_safety",
+                items: [
+                  "Health coverage forms (e.g., 1095-A/B/C, MA 1099-HC)",
+                ],
+              },
+              {
+                category: "Income Documents",
+                icon: "payments",
+                items: [
+                  "W-2 (from each employer)",
+                  "1099-NEC / 1099-MISC (freelance or self-employment income)",
+                  "SSA-1099 (Social Security benefits)",
+                ],
+              },
+              {
+                category: "Government Applications",
+                icon: "account_balance",
+                items: [
+                  "Other government applications (e.g., SNAP, unemployment, housing assistance)",
+                ],
+              },
+            ]}
+          />
 
-          <div className="col-span-12 md:col-span-4 min-w-0 bg-surface-container-lowest p-7 sm:p-10 hover:shadow-xl transition-all">
-            <span className="material-symbols-outlined text-3xl text-primary mb-6 block">
-              menu_book
-            </span>
-            <h4 className="font-serif text-2xl mb-2">Bookkeeping Services</h4>
-            <p className="text-sm text-on-surface-variant leading-relaxed">
-              Pristine digital ledgers tailored for monthly or quarterly
-              analysis.
-            </p>
-          </div>
+          <ServiceCard
+            cardClass="col-span-12 md:col-span-4 min-w-0 bg-surface-container-lowest p-7 sm:p-10 hover:shadow-xl transition-all"
+            icon="menu_book"
+            size="sm"
+            title="Bookkeeping Services"
+            description="Pristine digital ledgers tailored for monthly or quarterly analysis."
+            modalTitle="Bookkeeping Checklist"
+            modalSubtitle="Share your records and we'll keep your books accurate and current."
+            sections={[
+              {
+                category: "Monthly Records",
+                icon: "receipt_long",
+                items: [
+                  "Monthly bank statements",
+                  "Secure access to financial accounts (banking, credit cards, and liabilities)",
+                  "Timely submission of monthly records and supporting documents",
+                ],
+              },
+              {
+                category: "Onboarding",
+                icon: "folder_open",
+                items: [
+                  "Historical financial documentation for onboarding and accuracy",
+                  "A primary client contact for coordination and inquiries",
+                ],
+              },
+            ]}
+          />
 
           <div className="col-span-12 md:col-span-4 min-w-0 bg-surface-container-lowest p-7 sm:p-10 hover:shadow-xl transition-all">
             <span className="material-symbols-outlined text-3xl text-primary mb-6 block">

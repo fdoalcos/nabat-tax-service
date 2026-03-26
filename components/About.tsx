@@ -6,8 +6,8 @@ export default function About() {
       <div className="max-w-screen-2xl mx-auto grid md:grid-cols-2 gap-20 items-center w-full py-24">
         <div className="space-y-8">
           <h2 className="font-serif text-5xl md:text-6xl leading-tight">
-            Personalized Tax Strategy for the{" "}
-            <span className="italic">Hardworking Individual</span>
+            Trusted Expertise for Your{" "}
+            <span className="italic">Personal and Business Success</span>
           </h2>
           <div className="h-1 w-24 bg-primary"></div>
           <p className="font-sans text-lg text-on-surface-variant leading-relaxed">
@@ -36,7 +36,7 @@ export default function About() {
             alt="Modern architecture in Boston"
             width={800}
             height={600}
-            className="w-full h-[300px] md:h-[600px] object-cover rounded-lg shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
+            className="w-full h-[300px] md:h-[600px] object-cover rounded-lg shadow-2xl transition-all duration-700"
           />
         </div>
       </div>
